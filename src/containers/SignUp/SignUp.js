@@ -110,7 +110,7 @@ export default ()=>{
               />
               <HelpBlock>A senha deverá conter pelo menos 8 carcteres, um número, um caractere especial, uma letra maiúscula e uma minúscula.</HelpBlock>
             </FormGroup>
-            <Button block type="submit" bsSize="large" disabled={!validateForm()} > Cadastra-se </Button>
+            <Button block type="submit" bsSize="large" disabled={!validateForm()} > Cadastre-se </Button>
           </form>
         );
       }

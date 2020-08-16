@@ -56,7 +56,7 @@ export default ()=> {
                   ? <NavItem onClick={ handleLogout }>Sair</NavItem>
                   : <>
                       <LinkContainer to="/signup">
-                        <NavItem>Cadastra-se</NavItem>
+                        <NavItem>Cadastre-se</NavItem>
                       </LinkContainer>
                       <LinkContainer to="/login">
                         <NavItem>Login</NavItem>
