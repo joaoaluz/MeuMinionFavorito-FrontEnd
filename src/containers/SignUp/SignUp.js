@@ -23,7 +23,7 @@ export default ()=>{
     function validateForm() {
         return (
           fields.email.length > 0 &&
-          fields.password.length > 0 &&
+          fields.password.length > 7 &&
           fields.password === fields.confirmPassword
         );
     }
@@ -40,11 +40,11 @@ export default ()=>{
               username: fields.email,
               password: fields.password,
             });            
-
+            
             setNewUser(newUser);
 
             } catch (e) {
-            alert(e);
+            alert('Verifique se a senha contém os parametros necessários.');
             }
     
     }
@@ -59,7 +59,7 @@ export default ()=>{
             userHasAuthenticated(true);
             history.push("/");
         } catch (e) {
-            alert(e);
+            alert('O codigo inserido não é válido, por favor verifique seu email.');
         }      
       }
 
@@ -108,8 +108,9 @@ export default ()=>{
                 onChange={handleFieldChange}
                 value={fields.confirmPassword}
               />
+              <HelpBlock>A senha deverá conter pelo menos 8 carcteres, um número, um caractere especial, uma letra maiúscula e uma minúscula.</HelpBlock>
             </FormGroup>
-            <Button block type="submit" bsSize="large" disabled={!validateForm()} > Signup </Button>
+            <Button block type="submit" bsSize="large" disabled={!validateForm()} > Cadastra-se </Button>
           </form>
         );
       }
