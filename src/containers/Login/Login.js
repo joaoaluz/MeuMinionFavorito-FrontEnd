@@ -28,7 +28,7 @@ export default function Login() {
         userHasAuthenticated(true);
         history.push("/");
         } catch (e) {
-        alert(e.message);
+        alert('usuario ou senha inválidos.');
         }
     }
 

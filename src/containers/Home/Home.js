@@ -52,7 +52,7 @@ export default (props) =>{
                   <Button onClick={SendEmail} >Reservar agora!</Button> 
               </>:              
               <div className="alerta-nao-logado">
-              <p>Logue para poder fazer uma reservar!</p>
+              <p>Logue para poder fazer uma reserva!</p>
               </div>              
               
               }
