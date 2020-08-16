@@ -1,0 +1,17 @@
+
+.App .navbar-brand .ImagemHome {
+    padding: 10px 14px;
+    height: 80px;
+  }
+  
+  .App .navbar-brand .ImagemCarrinho {
+    
+    padding: 20px 0px;
+    height: 80px;
+  }
+  
+  .App .navbar-brand .cartNumber{
+    color: red;
+    
+    
+  }
