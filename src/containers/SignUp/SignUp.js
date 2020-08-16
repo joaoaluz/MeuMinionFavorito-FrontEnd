@@ -59,7 +59,7 @@ export default ()=>{
             userHasAuthenticated(true);
             history.push("/");
         } catch (e) {
-            alert('O codigo inserido não é válido, por favor verifique seu email.');
+            alert('O codigo inserido não é válido, por favor verifique seu e-mail.');
         }      
       }
 
